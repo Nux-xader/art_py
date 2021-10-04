@@ -184,30 +184,31 @@ pensize(3)
 color("chocolate", "orange") # (stroke, fill)
 begin_fill()
 for i in range(4):
-    forward(170)
-    left(90)
-end_fill()
-
-# Chimney
-penup()
-goto(20, 130)
-pendown()
-color("brown", "firebrick")
-begin_fill()
-for i in range(2):
-    forward(40)
-    left(90)
     forward(100)
     left(90)
 end_fill()
+left(90)
+
+color("brown", "firebrick")
+# # Chimney
+# penup()
+# goto(20, 130)
+# pendown()
+# begin_fill()
+# for i in range(2):
+#     forward(40)
+#     left(90)
+#     forward(100)
+#     left(90)
+# end_fill()
 
 # Roof
 penup()
-goto(-127, 70)
+goto(-100, -100)
 pendown()
 begin_fill()
 for i in range(3):
-    forward(225)
+    forward(100)
     left(120)
 end_fill()
 
