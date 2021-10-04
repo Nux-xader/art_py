@@ -1,6 +1,7 @@
 from turtle import *
+from tkinter import *
 
-speed(0)
+
 bgcolor("skyblue")
 
 # Grass
@@ -190,17 +191,19 @@ end_fill()
 left(90)
 
 color("brown", "firebrick")
-# # Chimney
-# penup()
-# goto(20, 130)
-# pendown()
-# begin_fill()
-# for i in range(2):
-#     forward(40)
-#     left(90)
-#     forward(100)
-#     left(90)
-# end_fill()
+
+# Chimney
+penup()
+goto(-27.5, -85)
+pendown()
+color("brown", "firebrick")
+begin_fill()
+for i in range(2):
+    forward(20)
+    left(90)
+    forward(50)
+    left(90)
+end_fill()
 
 # Roof
 penup()
@@ -213,6 +216,65 @@ for i in range(3):
 end_fill()
 
 
+# Dor
+penup()
+goto(-35, -200)
+pendown()
+color("red")
+begin_fill()
+for i in range(2):
+    forward(25)
+    left(90)
+    forward(40)
+    left(90)
+end_fill()
+penup()
+goto(-30, -185)
+pendown()
+color("black")
+begin_fill()
+circle(1)
+end_fill()
+
+
+# Window
+penup()
+goto(-80, -190)
+pendown()
+color("black", "white")
+begin_fill()
+for i in range(2):
+    forward(25)
+    left(90)
+    forward(40)
+    left(90)
+end_fill()
+penup()
+goto(-67.5, -190)
+pendown()
+color("black")
+begin_fill()
+left(90)
+forward(40)
+end_fill()
+penup()
+goto(-57.5, -170)
+pendown()
+color("black")
+begin_fill()
+left(90)
+forward(22)
+end_fill()
+
+# Window Cross - Horizontal Line 
+# penup()
+# goto(0, 25)
+# pendown()
+# color("black")
+# forward(25)
+
+
+
 # Cloud
 cloud(-300, 200)
 cloud(-100, 250)
@@ -222,5 +284,5 @@ cloud(180, 175)
 
 
 
-input()
-# hideturtle()
+hideturtle()
+exitonclick()
